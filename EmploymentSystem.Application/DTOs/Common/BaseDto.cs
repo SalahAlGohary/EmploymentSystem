@@ -6,6 +6,6 @@ namespace EmploymentSystem.Application.DTOs.Common
 {
     public class BaseDto
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

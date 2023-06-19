@@ -14,7 +14,7 @@ namespace EmploymentSystem.Application.DTOs
         public int MaximumApplications { get; set; }
         public DateTime ExpiryDate { get; set; }
         public bool IsActive { get; set; }
-        public int EmployerId { get; set; }
+        public Guid EmployerId { get; set; }
         public EmployerDto Employer { get; set; }
         public ICollection<ApplicationDto> Applications { get; set; }
     }

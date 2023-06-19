@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using EmploymentSystem.Application.DTOs;
-using EmploymentSystem.Application.Features.Vacancy.Requests;
 using EmploymentSystem.Application.Presistence.Contracts;
 using MediatR;
 using System;
@@ -8,6 +7,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using EmploymentSystem.Application.Features.Vacancy.Requests.Queries;
 
 namespace EmploymentSystem.Application.Features.Vacancy.Handlers.Queries
 {

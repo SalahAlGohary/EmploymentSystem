@@ -7,10 +7,26 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\EmploymentSystem.Domain\EmploymentSystem.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Applicant\Handler\Commands\" />
+    <Folder Include="Features\Applicant\Handler\Queries\" />
+    <Folder Include="Features\Applicant\Request\Commands\" />
+    <Folder Include="Features\Applicant\Request\Queries\" />
+    <Folder Include="Features\Application\Handler\Commands\" />
+    <Folder Include="Features\Application\Request\Commands\" />
+    <Folder Include="Features\Employer\Handler\Commands\" />
+    <Folder Include="Features\Employer\Handler\Queries\" />
+    <Folder Include="Features\Employer\Request\Commands\" />
+    <Folder Include="Features\Employer\Request\Queries\" />
+    <Folder Include="Features\Vacancy\Handlers\Commands\" />
+    <Folder Include="Features\Vacancy\Requests\Commands\" />
   </ItemGroup>
 
 </Project>
