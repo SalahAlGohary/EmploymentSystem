@@ -1,15 +1,15 @@
-﻿using EmploymentSystem.Domain.Common;
+﻿using EmploymentSystem.Domain;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace EmploymentSystem.Domain
+namespace EmploymentSystem.Application.DTOs
 {
-    public class Employer : BaseDomainEntity
+    public class EmployerDto
     {
         public string CompanyName { get; set; }
         public string Email { get; set; }
         public string ContactNumber { get; set; }
-        public ICollection<Vacancy> Vacancies { get; set; }
+        public ICollection<VacancyDto> Vacancies { get; set; }
     }
 }

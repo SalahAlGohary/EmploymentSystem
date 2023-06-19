@@ -1,12 +1,12 @@
-﻿using EmploymentSystem.Domain.Common;
+﻿using EmploymentSystem.Application.DTOs.Common;
+using EmploymentSystem.Domain;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using static System.Net.Mime.MediaTypeNames;
 
-namespace EmploymentSystem.Domain
+namespace EmploymentSystem.Application.DTOs
 {
-    public class Vacancy : BaseDomainEntity
+    public class VacancyDto : BaseDto
     {
         public string Title { get; set; }
         public string Description { get; set; }
@@ -15,7 +15,7 @@ namespace EmploymentSystem.Domain
         public DateTime ExpiryDate { get; set; }
         public bool IsActive { get; set; }
         public int EmployerId { get; set; }
-        public Employer Employer { get; set; }
-        public ICollection<Application> Applications { get; set; }
+        public EmployerDto Employer { get; set; }
+        public ICollection<ApplicationDto> Applications { get; set; }
     }
 }

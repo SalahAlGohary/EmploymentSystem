@@ -1,12 +1,12 @@
-﻿using System;
+﻿using EmploymentSystem.Domain.Common;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace EmploymentSystem.Domain
 {
-    public class Application
+    public class Application : BaseDomainEntity
     {
-        public int Id { get; set; }
         public DateTime ApplicationDate { get; set; }
         public int ApplicantId { get; set; }
         public Applicant Applicant { get; set; }

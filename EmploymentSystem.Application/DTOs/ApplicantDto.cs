@@ -1,11 +1,11 @@
-﻿using EmploymentSystem.Domain.Common;
+﻿using EmploymentSystem.Application.DTOs.Common;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace EmploymentSystem.Domain
+namespace EmploymentSystem.Application.DTOs
 {
-    public class Applicant : BaseDomainEntity
+    public class ApplicantDto : BaseDto
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

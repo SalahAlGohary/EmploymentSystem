@@ -6,9 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="Profiles\" />
-    <Folder Include="Presistence\" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmploymentSystem.Domain\EmploymentSystem.Domain.csproj" />
   </ItemGroup>
 
 </Project>
