@@ -6,7 +6,7 @@ using System.Text;
 
 namespace EmploymentSystem.Application.Features.Applicant.Request.Queries
 {
-    public class GetApplicantDetailReuest : IRequest<ApplicantDto>
+    public class GetApplicantDetailRequest : IRequest<ApplicantDto>
     {
         public Guid Id { get; set; }
     }

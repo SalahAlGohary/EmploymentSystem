@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using EmploymentSystem.Application.DTOs;
-using EmploymentSystem.Application.Features.Employer.Request;
+using EmploymentSystem.Application.Features.Employer.Request.Queries;
 using EmploymentSystem.Application.Presistence.Contracts;
 using MediatR;
 using System;
