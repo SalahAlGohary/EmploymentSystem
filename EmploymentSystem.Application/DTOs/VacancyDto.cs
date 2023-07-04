@@ -1,8 +1,9 @@
 ﻿using EmploymentSystem.Application.DTOs.Common;
-using EmploymentSystem.Domain;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace EmploymentSystem.Application.DTOs
 {
@@ -16,6 +17,6 @@ namespace EmploymentSystem.Application.DTOs
         public bool IsActive { get; set; }
         public Guid EmployerId { get; set; }
         public EmployerDto Employer { get; set; }
-        public ICollection<ApplicationDto> Applications { get; set; }
+        public ICollection<VacancyApplicationDto> Applications { get; set; }
     }
 }

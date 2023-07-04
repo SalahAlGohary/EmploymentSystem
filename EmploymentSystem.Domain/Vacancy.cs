@@ -1,8 +1,9 @@
 ﻿using EmploymentSystem.Domain.Common;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using static System.Net.Mime.MediaTypeNames;
+using System.Threading.Tasks;
 
 namespace EmploymentSystem.Domain
 {
@@ -15,7 +16,7 @@ namespace EmploymentSystem.Domain
         public DateTime ExpiryDate { get; set; }
         public bool IsActive { get; set; }
         public Guid EmployerId { get; set; }
-        public Employer Employer { get; set; }
-        public ICollection<Application> Applications { get; set; }
+        public virtual Employer Employer { get; set; }
+        public virtual ICollection<VacancyApplication> VacancyApplications { get; set; }
     }
 }

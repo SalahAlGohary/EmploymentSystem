@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmploymentSystem.Application.DTOs.Common
+namespace EmploymentSystem.Application.DTOs.IdentityDTOs
 {
-    public class BaseDto
+    public class LoginRequestDto : BaseIdentityRequestDto
     {
-        public Guid Id { get; set; }
     }
 }

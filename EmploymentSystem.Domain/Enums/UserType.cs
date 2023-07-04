@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmploymentSystem.Application.DTOs.Common
+namespace EmploymentSystem.Domain.Enums
 {
-    public class BaseDto
+    public enum UserType
     {
-        public Guid Id { get; set; }
+        Employer,
+        Applicant
     }
 }
